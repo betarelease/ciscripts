@@ -16,12 +16,12 @@ fi
 
 if [ ! -d ~/.rbenv ]; then
     echo "installing rbenv..."
-    git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
+    git clone https://github.com/rbenv/rbenv.git ~/.rbenv
 fi
 
 if [ ! -d ~/.rbenv/plugins/ruby-build ]; then
     echo "installing ruby-build plugin..."
-    git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+    git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
 fi
 
 if [ ! -d ~/.rbenv/versions/$RBENV_VERSION ]; then
